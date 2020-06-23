@@ -1,0 +1,10 @@
+{
+  "animeList1": {
+    "animeId": "anime1",
+    "listId": "list1"
+  },
+  "animeList2": {
+    "animeId": "anime2",
+    "listId": "list1"
+  }
+}

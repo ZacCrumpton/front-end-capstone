@@ -1,0 +1,26 @@
+{
+  "list1": {
+    "title": "popular",
+    "uid": "12345"
+  },
+  "list2": {
+    "title": "never seen",
+    "uid": "12345"
+  },
+  "list3": {
+    "title": "recommended",
+    "uid": "12345"
+  },
+  "list4": {
+    "title": "must buy",
+    "uid": "67898"
+  },
+  "list5": {
+    "title": "never touch",
+    "uid": "67898"
+  },
+  "list6": {
+    "title": "shonen",
+    "uid": "67898"
+  }
+}
