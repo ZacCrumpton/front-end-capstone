@@ -1,0 +1,110 @@
+{
+  "anime1":{
+    "title": "Demon Slayer",
+    "genre": "Shonen",
+    "episodes": "24",
+    "vActors": "TBD",
+    "publisher": "Toei Animation",
+    "mainCharacter": "Tanjiro",
+    "uid": "12345"
+  },
+  "anime2":{
+    "title": "Full Metal Alchemist",
+    "genre": "Shonen",
+    "episodes": "160",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "Edward Elric",
+    "uid": "12345"
+  },
+  "anime3":{
+    "title": "Dragon Ball Z",
+    "genre": "Shonen",
+    "episodes": "80",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "Son Goku",
+    "uid": "12345"
+  },
+  "anime4":{
+    "title": "Fate/Zero",
+    "genre": "Action",
+    "episodes": "35",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "Artorius",
+    "uid": "12345"
+  },
+  "anime5":{
+    "title": "Tower of God",
+    "genre": "Action",
+    "episodes": "20",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "not sure",
+    "uid": "12345"
+  },
+  "anime6":{
+    "title": "Naruto",
+    "genre": "Shonen",
+    "episodes": "200",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "Naruto Uzamaki",
+    "uid": "12345"
+  },
+  "anime7":{
+    "title": "JoJo's Bizarre Adventure",
+    "genre": "Action",
+    "episodes": "60",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "Jotaro",
+    "uid": "67891"
+  },
+  "anime8":{
+    "title": "Persona 5",
+    "genre": "Shonen",
+    "episodes": "45",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "Rin",
+    "uid": "67891"
+  },
+  "anime9":{
+    "title": "Cowboy BeBop",
+    "genre": "Action",
+    "episodes": "60",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "not sure",
+    "uid": "67891"
+  },
+  "anime10":{
+    "title": "One Piece",
+    "genre": "Shonen",
+    "episodes": "900",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "Luffy",
+    "uid": "67891"
+  },
+  "anime11":{
+    "title": "Psycho-Pass",
+    "genre": "Crime",
+    "episodes": "50",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "not sure",
+    "uid": "67891"
+  },
+  "anime12":{
+    "title": "Berserker",
+    "genre": "Action",
+    "episodes": "60",
+    "vActors": "TBD",
+    "publisher": "Toei",
+    "mainCharacter": "Guts",
+    "uid": "67891"
+  }
+}
