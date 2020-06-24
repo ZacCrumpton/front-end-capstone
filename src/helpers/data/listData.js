@@ -1,0 +1,22 @@
+import axios from 'axios';
+import firebaseConfig from '../apiKeys.json';
+
+const baseUrl = firebaseConfig.firebaseKeys.databaseURL;
+
+const getListsByUid = (uid) => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/list.json?orderBy="uid"&equalTo="${uid}"`)
+    .then((response) => {
+      const fbLists = response.data;
+      const lists = [];
+      if (fbLists) {
+        Object.keys(fbLists).forEach((fbId) => {
+          fbLists[fbId].id = fbId;
+          lists.push(fbLists[fbId]);
+        });
+      }
+      resolve(lists);
+    })
+    .catch((err) => reject(err));
+});
+
+export default { getListsByUid };
