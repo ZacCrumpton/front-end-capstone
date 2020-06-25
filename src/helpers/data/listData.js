@@ -19,4 +19,6 @@ const getListsByUid = (uid) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getListsByUid };
+const getSingleList = (listId) => axios.get(`${baseUrl}/list/${listId}.json`);
+
+export default { getListsByUid, getSingleList };
