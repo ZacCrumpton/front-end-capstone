@@ -18,13 +18,14 @@ class ListCard extends React.Component {
     const singleLink = `/list/${list.id}`;
     return (
       <div className="ListCard col-4">
-        <Link className="card" to={singleLink}>
+        <div className="card">
           <div className="card-body">
             <h6 className="card-title">{list.title}</h6>
             <Link className="btn btn-dark" to={editLink}>Edit</Link>
+            <Link className="btn btn-dark" to={singleLink}>SingleV</Link>
             <button className="btn btn-danger" onClick={() => removeList(list.id)}>Delete</button>
           </div>
-        </Link>
+        </div>
       </div>
     );
   }
