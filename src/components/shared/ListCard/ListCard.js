@@ -13,14 +13,15 @@ class ListCard extends React.Component {
   render() {
     const { list } = this.props;
     const editLink = `/list/edit/${list.id}`;
+    const singleLink = `/list/${list.id}`;
     return (
       <div className="ListCard col-4">
-        <div className="card">
+        <Link className="card" to={singleLink}>
           <div className="card-body">
             <h6 className="card-title">{list.title}</h6>
             <Link className="btn btn-dark" to={editLink}>Edit</Link>
           </div>
-        </div>
+        </Link>
       </div>
     );
   }
