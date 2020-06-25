@@ -6,6 +6,7 @@
     "vActors": "TBD",
     "publisher": "Toei Animation",
     "mainCharacter": "Tanjiro",
+    "imageUrl": "imageUrl",
     "uid": "12345"
   },
   "anime2":{
@@ -15,6 +16,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "Edward Elric",
+    "imageUrl": "imageUrl",
     "uid": "12345"
   },
   "anime3":{
@@ -24,6 +26,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "Son Goku",
+    "imageUrl": "imageUrl",
     "uid": "12345"
   },
   "anime4":{
@@ -33,6 +36,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "Artorius",
+    "imageUrl": "imageUrl",
     "uid": "12345"
   },
   "anime5":{
@@ -42,6 +46,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "not sure",
+    "imageUrl": "imageUrl",
     "uid": "12345"
   },
   "anime6":{
@@ -51,6 +56,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "Naruto Uzamaki",
+    "imageUrl": "imageUrl",
     "uid": "12345"
   },
   "anime7":{
@@ -60,6 +66,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "Jotaro",
+    "imageUrl": "imageUrl",
     "uid": "67891"
   },
   "anime8":{
@@ -69,6 +76,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "Rin",
+    "imageUrl": "imageUrl",
     "uid": "67891"
   },
   "anime9":{
@@ -78,6 +86,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "not sure",
+    "imageUrl": "imageUrl",
     "uid": "67891"
   },
   "anime10":{
@@ -87,6 +96,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "Luffy",
+    "imageUrl": "imageUrl",
     "uid": "67891"
   },
   "anime11":{
@@ -96,6 +106,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "not sure",
+    "imageUrl": "imageUrl",
     "uid": "67891"
   },
   "anime12":{
@@ -105,6 +116,7 @@
     "vActors": "TBD",
     "publisher": "Toei",
     "mainCharacter": "Guts",
+    "imageUrl": "imageUrl",
     "uid": "67891"
   }
 }
