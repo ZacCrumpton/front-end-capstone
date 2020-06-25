@@ -23,4 +23,11 @@ const getSingleList = (listId) => axios.get(`${baseUrl}/list/${listId}.json`);
 
 const postList = (newList) => axios.post(`${baseUrl}/list.json`, newList);
 
-export default { getListsByUid, getSingleList, postList };
+const deleteList = (listId) => axios.delete(`${baseUrl}/list/${listId}.json`);
+
+export default {
+  getListsByUid,
+  getSingleList,
+  postList,
+  deleteList,
+};

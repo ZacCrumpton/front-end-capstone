@@ -22,10 +22,16 @@ class MyLists extends React.Component {
     this.getLists();
   }
 
+  removeList = (listId) => {
+    listData.deleteList(listId)
+      .then(() => this.getLists())
+      .catch((err) => console.error('unable to delete list: ', err));
+  }
+
   render() {
     const { list } = this.state;
     const buildListCards = list.map((lists) => (
-      <ListCard key={lists.id} list={lists}/>
+      <ListCard key={lists.id} list={lists} removeList={this.removeList}/>
     ));
 
     return (
