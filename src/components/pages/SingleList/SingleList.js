@@ -15,11 +15,19 @@ class SingleList extends React.Component {
       .catch((err) => console.error('unable to get sinlge list: ', err));
   }
 
+  removeList = () => {
+    const { listId } = this.props.match.params;
+    listData.deleteList(listId)
+      .then(() => this.props.history.push('/list'))
+      .catch((err) => console.error('unable to delete list: ', err));
+  }
+
   render() {
     const { list } = this.state;
     return (
       <div className="SingleList">
         <div className="SingleList">
+          <button className="btn btn-danger" onClick={this.removeList}>Delete</button>
           <h1>{list.title}</h1>
         </div>
       </div>
