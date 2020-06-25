@@ -21,4 +21,6 @@ const getListsByUid = (uid) => new Promise((resolve, reject) => {
 
 const getSingleList = (listId) => axios.get(`${baseUrl}/list/${listId}.json`);
 
-export default { getListsByUid, getSingleList };
+const postList = (newList) => axios.post(`${baseUrl}/list.json`, newList);
+
+export default { getListsByUid, getSingleList, postList };
