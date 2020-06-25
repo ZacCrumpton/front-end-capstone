@@ -12,8 +12,12 @@ class ListCard extends React.Component {
   render() {
     const { list } = this.props;
     return (
-      <div className="ListCard">
-        {list.title}
+      <div className="ListCard col-4">
+        <div className="card">
+          <div className="card-body">
+    <h6 className="card-title">{list.title}</h6>
+          </div>
+        </div>
       </div>
     );
   }
