@@ -1,3 +1,25 @@
 .ListCard {
   margin-top: 15px;
 }
+
+.animeItems {
+  font-size: small;
+  background-color: lightgray;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.bold {
+  color: red;
+}
+
+.listTop {
+  display: flex;
+  justify-content: space-around;
+}
+
+.animeSingleViewButton {
+  font-size: small;
+  height: 30px;
+}

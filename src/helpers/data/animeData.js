@@ -19,4 +19,6 @@ const getAnimeByUid = (uid) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getAnimeByUid };
+const getSingleAnime = (animeId) => axios.get(`${baseUrl}/anime/${animeId}.json`);
+
+export default { getAnimeByUid, getSingleAnime };
