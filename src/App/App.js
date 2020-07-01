@@ -18,6 +18,10 @@ import Home from '../components/pages/Home/Home';
 import NewList from '../components/pages/NewList/NewList';
 import SingleList from '../components/pages/SingleList/SingleList';
 import MyLists from '../components/pages/MyLists/MyLists';
+import SingleAnime from '../components/pages/SingleAnime/SingleAnime';
+import NewAnime from '../components/pages/NewAnime/NewAnime';
+import MyAnime from '../components/pages/MyAnime/MyAnime';
+import EditAnime from '../components/pages/EditAnime/EditAnime';
 
 import fbConnection from '../helpers/data/connection';
 
@@ -71,9 +75,10 @@ class App extends React.Component {
                 <PrivateRoute path='/list/new' component={NewList} authed={authed} />
                 <PrivateRoute path='/list/:listId' component={SingleList} authed={authed} />
                 <PrivateRoute path='/list' component={MyLists} authed={authed} />
-                {/* <PrivateRoute path='/anime/edit/:animeId' component={EditAnime} authed={authed} />
-                <PrivateRoute path='/anime/new' component={NewAnimeForm} authed={authed} />
-                <PrivateRoute path='/anime/:animeId' component={SingleAnime} authed={authed} /> */}
+                <PrivateRoute path='/anime/edit/:animeId' component={EditAnime} authed={authed} />
+                <PrivateRoute path='/anime/new' component={NewAnime} authed={authed} />
+                <PrivateRoute path='/anime/:animeId' component={SingleAnime} authed={authed} />
+                <PrivateRoute path='/anime' component={MyAnime} authed={authed} />
                 <PublicRoute path='/auth' component={Auth} authed={authed} />
                 <Redirect from="*" to="/home"/>
             </Switch>

@@ -2,6 +2,7 @@ import React from 'react';
 
 import authData from '../../../helpers/data/authData';
 import listData from '../../../helpers/data/listData';
+import smash from '../../../helpers/data/smash';
 import ListCard from '../../shared/ListCard/ListCard';
 
 import './MyLists.scss';
@@ -13,10 +14,16 @@ class MyLists extends React.Component {
 
   getLists = () => {
     const uid = authData.getUid();
-    listData.getListsByUid(uid)
+    smash.getCompleteLists(uid)
       .then((list) => this.setState({ list }))
       .catch((err) => console.error('unable to get lists: ', err));
   }
+
+  // getSingleAnime = () => {
+  //   animeData.getSinlgeAnime(uid)
+  //     .then()
+  //     .catch();
+  // }
 
   componentDidMount() {
     this.getLists();

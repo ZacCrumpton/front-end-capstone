@@ -6,5 +6,21 @@
   "animeList2": {
     "animeId": "anime2",
     "listId": "list1"
+  },
+  "animeList3": {
+    "animeId": "anime3",
+    "listId": "list1"
+  },
+  "animeList4": {
+    "animeId": "anime4",
+    "listId": "list1"
+  },
+  "animeList5": {
+    "animeId": "anime5",
+    "listId": "list2"
+  },
+  "animeList6": {
+    "animeId": "anime6",
+    "listId": "list3"
   }
 }
