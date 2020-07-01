@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 import authData from '../../../helpers/data/authData';
 import animeData from '../../../helpers/data/animeData';
 import AnimeCard from '../../shared/AnimeCard/AnimeCard';
@@ -31,6 +33,7 @@ class MyAnime extends React.Component {
       <div className="MyAnime">
         <h1>My Anime</h1>
         <div className="d-flex flex-wrap">
+          <Link to='/anime/new'>Add Anime</Link>
           {buildAnimeCards}
         </div>
       </div>
