@@ -24,16 +24,22 @@ class MyAnime extends React.Component {
     this.getAnimes();
   }
 
+  removeAnime = (animeId) => {
+    animeData.deleteAnime(animeId)
+      .then(() => this.getAnimes())
+      .catch((err) => console.error('unable to delete anime: ', err));
+  }
+
   render() {
     const { anime } = this.state;
     const buildAnimeCards = anime.map((animes) => (
-      <AnimeCard key={animes.id} anime={animes}/>
+      <AnimeCard key={animes.id} anime={animes} removeAnime={this.removeAnime}/>
     ));
     return (
       <div className="MyAnime">
         <h1>My Anime</h1>
         <div className="d-flex flex-wrap">
-          <Link to='/anime/new'>Add Anime</Link>
+          <Link className="btn btn-dark" to='/anime/new'>Add Anime</Link>
           {buildAnimeCards}
         </div>
       </div>

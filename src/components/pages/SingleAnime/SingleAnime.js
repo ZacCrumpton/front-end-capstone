@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import animeData from '../../../helpers/data/animeData';
 
@@ -7,28 +8,28 @@ import './SingleAnime.scss';
 
 class SingleAnime extends React.Component {
   state = {
-    anime: {
-      title: '',
-      genre: '',
-      episodes: '',
-      vActors: '',
-      publisher: '',
-      mainCharacter: '',
-      imageUrl: '',
-    },
+    anime: {},
   }
 
   componentDidMount() {
     const { animeId } = this.props.match.params;
-    // smash.getCompleteLists(animeId)
-    //   .then((response) => this.setState(anime: response.data))
+    console.error('animeId: ', animeId);
     animeData.getSingleAnime(animeId)
       .then((response) => this.setState({ anime: response.data }))
       .catch((err) => console.error('unable to get single anime: ', err));
   }
 
+  removeAnime = () => {
+    const { animeId } = this.props.match.params;
+    animeData.deleteAnime(animeId)
+      .then(() => this.props.history.push('/anime'))
+      .catch((err) => console.error('unable to delete single anime: ', err));
+  }
+
   render() {
     const { anime } = this.state;
+    const { animeId } = this.props.match.params;
+    const editLink = `/anime/edit/${animeId}`;
     return (
       <div className="SingleAnime">
         <div className="card">
@@ -40,6 +41,8 @@ class SingleAnime extends React.Component {
           <p className="card-text">Publisher: {anime.publisher}</p>
           <p className="card-text">Main Character: {anime.mainCharacter}</p>
           <p className="card-text">Voice Actor: {anime.vActor}</p>
+          <button className="btn btn-danger" onClick={this.removeAnime}>Delete</button>
+          <Link className="btn btn-dark" to={editLink}>Edit</Link>
         </div>
         </div>
       </div>

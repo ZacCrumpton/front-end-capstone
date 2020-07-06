@@ -8,10 +8,13 @@ import animeShape from '../../../helpers/propz/animeShape';
 class AnimeCard extends React.Component {
   static propTypes = {
     anime: animeShape.animeShape,
+    removeAnime: PropTypes.func.isRequired,
   }
 
   render() {
-    const { anime } = this.props;
+    const { anime, removeAnime } = this.props;
+    // const { animeId } = this.props.match.params;
+    const editLink = `/anime/edit/${anime.id}`;
     return (
       <div className="AnimeCard">
         <div className="card">
@@ -23,6 +26,8 @@ class AnimeCard extends React.Component {
           <p className="card-text">Publisher: {anime.publisher}</p>
           <p className="card-text">Main Character: {anime.mainCharacter}</p>
           <p className="card-text">Voice Actor: {anime.vActors}</p>
+          <button className="btn btn-danger" onClick={() => removeAnime(anime.id)}>Delete</button>
+          <Link className="btn btn-dark" to={editLink}><i className="fas fa-pencil-alt"></i></Link>
         </div>
         </div>
       </div>
