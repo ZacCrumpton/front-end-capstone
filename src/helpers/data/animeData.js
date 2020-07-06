@@ -23,4 +23,14 @@ const getSingleAnime = (animeId) => axios.get(`${baseUrl}/anime/${animeId}.json`
 
 const postAnime = (newAnime) => axios.post(`${baseUrl}/anime.json`, newAnime);
 
-export default { getAnimeByUid, getSingleAnime, postAnime };
+const deleteAnime = (animeId) => axios.delete(`${baseUrl}/anime/${animeId}.json`);
+
+const putAnime = (animeId, updatedAnime) => axios.put(`${baseUrl}/anime/${animeId}.json`, updatedAnime);
+
+export default {
+  getAnimeByUid,
+  getSingleAnime,
+  postAnime,
+  deleteAnime,
+  putAnime,
+};
