@@ -32,8 +32,8 @@ class SingleAnime extends React.Component {
     const editLink = `/anime/edit/${animeId}`;
     return (
       <div className="SingleAnime">
-        <div className="card">
-          <img className="card-img-top" src={anime.imageUrl} alt={anime.title}/>
+        <img className="animeImg" src={anime.imageUrl} alt={anime.title}/>
+        <div className="card bg-dark flex-end">
         <div className="card-body">
           <h5 className="card-title">{anime.title}</h5>
           <p className="card-text">Genre: {anime.genre}</p>

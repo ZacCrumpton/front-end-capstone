@@ -1,3 +1,12 @@
 .SingleAnime {
-  display: block;
+  display: flex;
+  color: whitesmoke;
+  justify-content: space-evenly;
+  .animeImg{
+    width: auto;
+    height: 400px;
+  }
+  .card{
+    width: 500px;
+  }
 }

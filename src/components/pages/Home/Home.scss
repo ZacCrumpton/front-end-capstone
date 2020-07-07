@@ -1,3 +1,32 @@
 .Home {
+  .Carosel{
+    border-color: red;
+    border-width: thin;
+  }
   display: block;
+  .imgCarTitle{
+    color: red;
+    text-shadow: 5px 5px 5px black;
+  }
+  .imgCarDesc{
+    color: white;
+    text-shadow:  5px 5px 5px black;
+  }
+  .carouselImg{
+    height: 400px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,0,1));
+  }
+  h2{
+    margin-top: 20px;
+    align-self: flex-start;
+    color: red;
+  }
+  p{
+    align-self: right;
+    color: whitesmoke;
+  }
+  .homeCard{
+    margin-bottom: 50px;
+    padding: 15px;
+  }
 }

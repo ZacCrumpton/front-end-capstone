@@ -1,3 +1,9 @@
 .MyAnime {
   display: block;
+  .addAnimeBtn{
+    margin-top: 20px;
+    :hover {
+      color: #ed1212;
+    }
+  }
 }

@@ -27,4 +27,16 @@ const getCompleteLists = (uid) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getCompleteLists };
+const completelyRemoveAnime = (animeListId) => new Promise((resolve, reject) => {
+  animeListData.deleteAnimeList(animeListId)
+    .then((animeId) => {
+      animeData.getSingleAnime(animeId)
+        .then((animes) => {
+          animes.forEach((anime) => animeData.deleteAnime(anime.id));
+          resolve();
+        });
+    })
+    .catch((err) => reject(err));
+});
+
+export default { getCompleteLists, completelyRemoveAnime };

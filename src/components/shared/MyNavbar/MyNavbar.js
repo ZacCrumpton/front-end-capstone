@@ -62,10 +62,14 @@ class MyNavbar extends React.Component {
       return <Nav className="ml-auto" navbar></Nav>;
     };
 
+    const textColor = {
+      color: 'red',
+    };
+
     return (
       <div className="myNavbar">
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">Konichiwa Anime</NavbarBrand>
+          <NavbarBrand href="/">Konichiwa <span style={textColor}>Anime</span></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={isOpen} navbar>
             {buildNavbar()}

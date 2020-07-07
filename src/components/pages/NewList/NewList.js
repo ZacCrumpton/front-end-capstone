@@ -35,9 +35,10 @@ class NewList extends React.Component {
     } = this.state;
 
     return (
-      <div className="NewList">
-        <h1>New List</h1>
-        <form className="col-12 offset-3 text-left">
+      <div className="NewList col-12">
+        <h1>Create A New List</h1>
+        <div className="card newListCard bg-dark">
+        <form className="col-6 offset-3 text-left">
           <div className="form-group">
             <label htmlFor="list-title">Title</label>
             <input
@@ -50,6 +51,7 @@ class NewList extends React.Component {
           </div>
           <button type="submit" className="btn btn-dark" onClick={this.saveList}>Save List</button>
         </form>
+        </div>
       </div>
     );
   }

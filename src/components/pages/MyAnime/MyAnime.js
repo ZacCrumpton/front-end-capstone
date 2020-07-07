@@ -37,9 +37,8 @@ class MyAnime extends React.Component {
     ));
     return (
       <div className="MyAnime">
-        <h1>My Anime</h1>
-        <div className="d-flex flex-wrap">
-          <Link className="btn btn-dark" to='/anime/new'>Add Anime</Link>
+        <Link className="btn btn-dark addAnimeBtn" to='/anime/new'>Add Anime</Link>
+        <div className="d-flex flex-wrap justify-content-around">
           {buildAnimeCards}
         </div>
       </div>

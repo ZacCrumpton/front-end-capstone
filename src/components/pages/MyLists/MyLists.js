@@ -6,6 +6,7 @@ import smash from '../../../helpers/data/smash';
 import ListCard from '../../shared/ListCard/ListCard';
 
 import './MyLists.scss';
+import animeData from '../../../helpers/data/animeData';
 
 class MyLists extends React.Component {
   state = {
@@ -35,10 +36,16 @@ class MyLists extends React.Component {
       .catch((err) => console.error('unable to delete list: ', err));
   }
 
+  removeAnimeList = (animeListId) => {
+    smash.completelyRemoveAnime(animeListId)
+      .then(() => animeData.getSingleAnime())
+      .catch((err) => console.error('unable to delete anime and animelist: ', err));
+  }
+
   render() {
     const { list } = this.state;
     const buildListCards = list.map((lists) => (
-      <ListCard key={lists.id} list={lists} removeList={this.removeList}/>
+      <ListCard key={lists.id} list={lists} removeList={this.removeList} removeAnimeList={this.removeAnimeList}/>
     ));
 
     return (

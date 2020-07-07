@@ -19,4 +19,6 @@ const getAllAnimeLists = () => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-export default { getAllAnimeLists };
+const deleteAnimeList = (animeListId) => axios.delete(`${baseUrl}/animeList/${animeListId}.json`);
+
+export default { getAllAnimeLists, deleteAnimeList };

@@ -22,6 +22,7 @@ import SingleAnime from '../components/pages/SingleAnime/SingleAnime';
 import NewAnime from '../components/pages/NewAnime/NewAnime';
 import MyAnime from '../components/pages/MyAnime/MyAnime';
 import EditAnime from '../components/pages/EditAnime/EditAnime';
+import Footer from '../components/shared/Footer/Footer';
 
 import fbConnection from '../helpers/data/connection';
 
@@ -86,6 +87,7 @@ class App extends React.Component {
             </div>
           </React.Fragment>
         </BrowserRouter>
+        <Footer/>
       </div>
     );
   }
