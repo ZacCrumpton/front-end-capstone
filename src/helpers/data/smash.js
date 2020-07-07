@@ -27,12 +27,12 @@ const getCompleteLists = (uid) => new Promise((resolve, reject) => {
     .catch((err) => reject(err));
 });
 
-const completelyRemoveAnime = (animeListId) => new Promise((resolve, reject) => {
-  animeListData.deleteAnimeList(animeListId)
-    .then((animeId) => {
-      animeData.getSingleAnime(animeId)
-        .then((animes) => {
-          animes.forEach((anime) => animeData.deleteAnime(anime.id));
+const completelyRemoveAnime = (animeId) => new Promise((resolve, reject) => {
+  animeData.deleteAnime(animeId)
+    .then(() => {
+      animeListData.getAnimeListByAnimeId(animeId)
+        .then((animeLists) => {
+          animeLists.forEach((anime) => animeListData.deleteAnimeList(anime.id));
           resolve();
         });
     })

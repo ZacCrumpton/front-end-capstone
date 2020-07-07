@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import animeData from '../../../helpers/data/animeData';
 
 import './SingleAnime.scss';
+import smash from '../../../helpers/data/smash';
 // import smash from '../../../helpers/data/smash';
 
 class SingleAnime extends React.Component {
@@ -21,8 +22,8 @@ class SingleAnime extends React.Component {
 
   removeAnime = () => {
     const { animeId } = this.props.match.params;
-    animeData.deleteAnime(animeId)
-      .then(() => this.props.history.push('/anime'))
+    smash.completelyRemoveAnime(animeId)
+      .then(() => this.props.history.push('/list'))
       .catch((err) => console.error('unable to delete single anime: ', err));
   }
 
