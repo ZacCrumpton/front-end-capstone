@@ -97,7 +97,8 @@ class NewAnime extends React.Component {
 
     return (
       <div className="NewAnime col-12">
-        <h1>NewAnime</h1>
+        <h1>Add A New Anime</h1>
+        <div className="card newAnimeCard bg-dark">
         <form className="col-6 offset-3 text-left">
           <div className="form-group">
             <label htmlFor="anime-title">Tite</label>
@@ -169,8 +170,9 @@ class NewAnime extends React.Component {
               onChange={this.imageUrlChange}
             />
           </div>
-          <button type="submit" className="btn btn-primary" onClick={this.saveAnime}>Save New</button>
+          <button type="submit" className="btn btn-danger" onClick={this.saveAnime}>Save New</button>
           </form>
+          </div>
       </div>
     );
   }

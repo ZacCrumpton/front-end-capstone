@@ -1,3 +1,13 @@
 .AnimeCard {
+  margin-top: 20px;
   display: block;
+  color: whitesmoke;
+  .animeImg{
+    height: 300px;
+    width: auto;
+    margin-top: 15px;
+  }
+  .displayCard{
+    width: 350px;
+  }
 }

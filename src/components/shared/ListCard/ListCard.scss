@@ -1,5 +1,9 @@
 .ListCard {
   margin-top: 15px;
+  color: whitesmoke;
+  :hover {
+		color: #ed1212;
+  }
 }
 
 .animeItems {
@@ -8,6 +12,7 @@
   margin-bottom: 20px;
   padding: 5px;
   border-radius: 2px;
+  color: black;
 }
 
 .bold {
