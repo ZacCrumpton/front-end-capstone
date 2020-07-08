@@ -8,16 +8,18 @@ import animeShape from '../../../helpers/propz/animeShape';
 class AnimeCard extends React.Component {
   static propTypes = {
     anime: animeShape.animeShape,
-    removeAnime: PropTypes.func.isRequired,
     removeAnimeList: PropTypes.func.isRequired,
+  }
+
+  deleteMe = (e) => {
+    e.preventDefault();
+    const { anime, removeAnimeList } = this.props;
+    removeAnimeList(anime.id);
   }
 
   render() {
     const {
       anime,
-      removeAnime,
-      removeAnimeList,
-      animeList,
     } = this.props;
 
     const textColor = {
@@ -36,7 +38,7 @@ class AnimeCard extends React.Component {
           <p className="card-text"><span style={textColor}>Publisher:</span> {anime.publisher}</p>
           <p className="card-text"><span style={textColor}>Main Character:</span> {anime.mainCharacter}</p>
           <p className="card-text"><span style={textColor}>Voice Actor:</span> {anime.vActors}</p>
-          <button className="btn btn-danger" onClick={() => removeAnimeList(animeList.id)}>Delete</button>
+          <button className="btn btn-danger" onClick={this.deleteMe}>Delete</button>
           <Link className="btn btn-dark" to={editLink}><i className="fas fa-pencil-alt"></i></Link>
         </div>
         </div>
