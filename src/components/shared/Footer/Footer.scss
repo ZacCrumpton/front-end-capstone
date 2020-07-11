@@ -1,13 +1,12 @@
 .Footer {
   .footerDiv {
-    position: relative;
-    left: 0;
+    position: fixed;
     bottom: 0;
     height: 60px;
     width: 100%;
     color: white;
     text-align: center;
-    margin-top: 30px;
+  
     .credits{
       padding-top: 20px;
       font-size: small;

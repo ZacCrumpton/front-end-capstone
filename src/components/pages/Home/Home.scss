@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 .Home {
+  font-family: 'Bangers', cursive;
   .Carosel{
     border-color: red;
     border-width: thin;
   }
-  display: block;
   .imgCarTitle{
     color: red;
     text-shadow: 5px 5px 5px black;

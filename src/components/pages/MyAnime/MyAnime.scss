@@ -1,5 +1,19 @@
 .MyAnime {
   display: block;
+  padding-bottom: 50px;
+  .animeBanner{
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 217, 0));
+  }
+  .animeH3{
+    color: whitesmoke;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .banner1{
+    height: 250px;
+    width: auto;
+  }
   .addAnimeBtn{
     margin-top: 20px;
     :hover {
