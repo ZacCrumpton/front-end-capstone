@@ -1,3 +1,18 @@
 .MyLists {
   display: block;
+  padding-bottom: 50px;
+  .listBanner{
+    height: 275px;
+    width: 100%;
+    background-image: linear-gradient(black, rgb(255, 102, 0));
+  }
+  .listH3{
+    margin-top: 100px;
+    color: whitesmoke;
+  }
+  .banner1{
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+  }
 }
