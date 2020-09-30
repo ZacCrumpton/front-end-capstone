@@ -17,4 +17,4 @@ This application uses React, Javascript, SCSS
 
 ## Contributors
 
-@ZacCrumpton
+Zac Crumpton
